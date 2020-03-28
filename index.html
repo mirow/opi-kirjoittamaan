@@ -54,9 +54,9 @@
         if (e.key) {
           var msg = new SpeechSynthesisUtterance();
 
-          msg.lang = 'fi-FI';
+          msg.lang = 'sv-SE';
           msg.text = e.key;
-          msg.voice = getVoice('fi-FI', 'fi');
+          msg.voice = getVoice('sv-SE', 'sv');
 
           speechSynthesis.speak(msg);
         }
@@ -73,9 +73,9 @@
 
         var msg = new SpeechSynthesisUtterance();
 
-        msg.lang = 'fi-FI';
+        msg.lang = 'sv-SE';
         msg.text = input.value;
-        msg.voice = getVoice('fi-FI', 'fi');
+        msg.voice = getVoice('sv-SE', 'sv');
 
         speechSynthesis.speak(msg);
       };
